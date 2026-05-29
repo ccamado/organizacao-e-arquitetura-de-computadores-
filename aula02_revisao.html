@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 2 (Revisão) — Barramentos e chipset</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 2 (Revisão) — Barramentos e chipset</h1>
+          <p>08/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🛣️ Aula 2 (Revisão) — Barramentos e chipset</h2>
+<p><strong>Objetivo:</strong> entender como as peças “conversam” dentro do computador: barramentos = caminhos; chipset = organizador.</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>Barramento</strong> = caminho por onde passam dados/informações.</li>
+  <li><strong>Chipset</strong> = ajuda a organizar a comunicação entre CPU, RAM, disco e portas.</li>
+  <li><strong>Mapa de conversa:</strong> CPU ↔ RAM (uso rápido), CPU ↔ Disco (arquivos), CPU ↔ USB (periféricos), CPU ↔ Rede (internet).</li>
+</ul>
+<div class="note"><strong>Dica de diagnóstico:</strong> PC lento → pensar em disco/RAM. Pendrive não aparece → USB. Internet cai → rede.</div>
+
+      </div>
+
+      <div class="quiz" id="quiz-a2">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Barramento é:", "options": ["Caminho por onde passam dados", "A tela do computador", "Um tipo de mouse", "Um programa do Windows", "Um cabo de energia"], "correct": 0, "explain": "Barramento = caminho de dados."}, {"stem": "Chipset é melhor descrito como:", "options": ["Um tipo de teclado", "Organizador da comunicação entre componentes", "Um arquivo do Word", "Um jogo", "Um monitor"], "correct": 1, "explain": "Chipset coordena comunicação."}, {"stem": "CPU ↔ RAM serve para:", "options": ["Conectar internet", "Imprimir papel", "Guardar fotos para sempre", "Aumentar o volume", "Guardar coisas que o PC usa agora (rápido)"], "correct": 4, "explain": "RAM = uso imediato."}, {"stem": "CPU ↔ Disco está ligado a:", "options": ["Som do PC", "Luzes do gabinete", "Arquivos e sistema armazenados", "Teclas do teclado", "Wi‑Fi da escola"], "correct": 2, "explain": "Disco guarda arquivos/sistema."}, {"stem": "Pendrive não aparece. Qual caminho suspeitar?", "options": ["Rede", "Disco", "RAM", "USB", "Monitor"], "correct": 3, "explain": "Pendrive usa USB."}, {"stem": "Internet cai. Qual caminho suspeitar?", "options": ["Rede", "USB", "Mouse", "Monitor", "Teclado"], "correct": 0, "explain": "Conexão de rede."}, {"stem": "PC lento abrindo programas. Pode ser:", "options": ["Cor do wallpaper", "Disco/RAM sendo gargalo", "Mouse pequeno", "Teclado velho", "Cabo HDMI curto"], "correct": 1, "explain": "Disco/RAM impactam abertura."}, {"stem": "Analogia da aula:", "options": ["Chipset = teclado", "Barramento = bateria", "Barramentos = ruas; chipset = semáforo", "Barramento = impressora", "Chipset = monitor"], "correct": 2, "explain": "Ruas e semáforo."}, {"stem": "Qual item NÃO faz parte do mapa de conversa básico?", "options": ["CPU", "RAM", "Disco", "USB", "Carregador do celular"], "correct": 4, "explain": "Carregador não é parte interna do mapa."}, {"stem": "Servidor precisa muito de:", "options": ["Teclado gamer", "Wallpaper bonito", "Rede e disco confiáveis", "Apenas monitor", "Som alto"], "correct": 3, "explain": "Servidor conversa com rede/disco."}];
+    initQuiz("quiz-a2", QUESTIONS);
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 1 (Revisão) — Placa-mãe (mapa da placa)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 1 (Revisão) — Placa-mãe (mapa da placa)</h1>
+          <p>08/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🧠 Aula 1 (Revisão) — Placa-mãe: mapa da placa</h2>
+<p><strong>Objetivo:</strong> reconhecer a placa-mãe como o “centro” do computador e identificar as partes principais para montar um mapa simples.</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>Placa-mãe</strong> é a placa principal onde tudo se conecta: CPU, RAM, discos, portas e placas.</li>
+  <li><strong>Soquete/CPU</strong>: local do processador.</li>
+  <li><strong>Slots de RAM</strong>: onde encaixam as memórias.</li>
+  <li><strong>Slots de expansão</strong>: onde encaixam placas (vídeo/rede/som).</li>
+  <li><strong>Conector de energia</strong>: entrada de energia vinda da fonte.</li>
+  <li><strong>Portas</strong>: USB/rede/áudio/vídeo (conexões externas).</li>
+</ul>
+<div class="note"><strong>Conexão com tecnologia:</strong> servidor é um computador. Sem placa-mãe e conexões, o servidor não funciona → site fora do ar.</div>
+
+      </div>
+
+      <div class="quiz" id="quiz-a1">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "A placa-mãe é importante porque:", "options": ["Aumenta o volume do som", "Conecta e organiza as peças do computador", "É o monitor do PC", "É o cabo de energia", "É a internet do computador"], "correct": 1, "explain": "Ela concentra conexões entre componentes."}, {"stem": "Onde a CPU é instalada?", "options": ["No slot de expansão", "Na porta USB", "No soquete/CPU", "Dentro do monitor", "No cabo HDMI"], "correct": 2, "explain": "A CPU encaixa no soquete."}, {"stem": "Slots de RAM servem para:", "options": ["Encaixar as memórias RAM", "Conectar o PC à tomada", "Guardar arquivos", "Fazer internet", "Substituir o teclado"], "correct": 0, "explain": "RAM vai nos slots."}, {"stem": "Slots de expansão são usados para:", "options": ["Instalar sistema operacional", "Trocar o teclado", "Colocar bateria", "Instalar placas extras (ex.: vídeo/rede)", "Aumentar a tela"], "correct": 3, "explain": "Expansão = placas adicionais."}, {"stem": "O conector de energia na placa-mãe recebe energia de:", "options": ["Monitor", "Mouse", "Teclado", "Pendrive", "Fonte de alimentação"], "correct": 4, "explain": "A fonte fornece energia."}, {"stem": "Portas traseiras geralmente ficam:", "options": ["No meio da placa-mãe", "Na borda da placa-mãe (parte de trás do gabinete)", "No cooler", "No disco", "Na RAM"], "correct": 1, "explain": "As portas ficam na borda para acesso externo."}, {"stem": "Qual item NÃO é uma parte típica da placa-mãe?", "options": ["Slots de RAM", "Soquete/CPU", "Wi‑Fi da cidade inteira", "Conector de energia", "Slots de expansão"], "correct": 2, "explain": "“Wi‑Fi da cidade inteira” não é parte da placa."}, {"stem": "A melhor comparação feita em aula foi:", "options": ["Placa-mãe = cidade do computador", "Placa-mãe = teclado", "Placa-mãe = mouse", "Placa-mãe = impressora", "Placa-mãe = pendrive"], "correct": 0, "explain": "Cidade = conexões e caminhos."}, {"stem": "Sem placa-mãe, o computador:", "options": ["Fica mais rápido", "Não funciona porque as peças não se conectam", "Vira servidor automaticamente", "Ganha mais RAM", "Fica com internet melhor"], "correct": 1, "explain": "Sem conexão central, não liga/funciona."}, {"stem": "Conexão com web/servidor: servidor fora do ar pode ocorrer se:", "options": ["O mouse não for gamer", "A área de trabalho estiver feia", "O teclado for pequeno", "A tela for 720p", "O computador/servidor não funcionar por problema de hardware"], "correct": 4, "explain": "Falha de hardware derruba serviço."}];
+    initQuiz("quiz-a1", QUESTIONS);
+  </script>
+</body>
+</html>

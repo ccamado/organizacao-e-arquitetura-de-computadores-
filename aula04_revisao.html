@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 4 (Revisão) — Portas e conectores</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 4 (Revisão) — Portas e conectores</h1>
+          <p>15/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🔌 Aula 4 (Revisão) — Portas e conectores (USB, rede, áudio, vídeo)</h2>
+<p><strong>Objetivo:</strong> reconhecer portas comuns e entender para que servem (entrada/saída e rede).</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>USB</strong>: teclado, mouse, pendrive, celular, webcam.</li>
+  <li><strong>Rede (RJ‑45)</strong>: cabo de internet.</li>
+  <li><strong>Áudio</strong>: fone/microfone (conectores P2).</li>
+  <li><strong>Vídeo</strong>: HDMI/VGA/DVI (liga monitor).</li>
+  <li><strong>Regra:</strong> conectar no lugar certo evita falhas e retrabalho.</li>
+</ul>
+
+      </div>
+
+      <div class="quiz" id="quiz-a4">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Porta usada para pendrive:", "options": ["USB", "RJ‑45", "Áudio", "VGA", "DVI"], "correct": 0, "explain": "Pendrive usa USB."}, {"stem": "RJ‑45 está ligado a:", "options": ["Fone", "Mouse", "Monitor", "Rede (internet por cabo)", "Impressora"], "correct": 3, "explain": "RJ‑45 = rede."}, {"stem": "HDMI é usado para:", "options": ["Internet", "Som do microfone", "Imagem (e às vezes áudio) para o monitor", "Energia", "RAM"], "correct": 2, "explain": "HDMI liga monitor."}, {"stem": "Conector P2 geralmente é:", "options": ["Para energia", "Para áudio (fone/mic)", "Para rede", "Para disco", "Para CPU"], "correct": 1, "explain": "P2 = áudio."}, {"stem": "Se o teclado não funciona, o primeiro lugar para checar é:", "options": ["HDMI", "RJ‑45", "VGA", "P2", "USB"], "correct": 4, "explain": "Teclado normalmente USB."}, {"stem": "Qual é um erro comum?", "options": ["Confundir vídeo com rede", "Conectar pendrive na USB", "Conectar cabo de rede no RJ‑45", "Conectar monitor no HDMI", "Usar P2 para fone"], "correct": 0, "explain": "Vídeo ≠ rede."}, {"stem": "Portas traseiras ficam:", "options": ["No monitor", "No teclado", "Na parte de trás do gabinete (ligadas à placa-mãe)", "No mousepad", "No pendrive"], "correct": 2, "explain": "Geralmente atrás."}, {"stem": "Webcam normalmente usa:", "options": ["VGA", "USB", "RJ‑45", "P2", "DVI"], "correct": 1, "explain": "Webcam USB."}, {"stem": "Para internet por cabo, você precisa de:", "options": ["HDMI", "VGA", "P2", "USB", "RJ‑45"], "correct": 4, "explain": "Rede por cabo = RJ‑45."}, {"stem": "Qual item NÃO é um conector de vídeo?", "options": ["HDMI", "VGA", "DVI", "USB", "DisplayPort (exemplo)"], "correct": 3, "explain": "USB não é conector de vídeo ‘clássico’ (há exceções, mas na revisão: USB ≠ vídeo)."}];
+    initQuiz("quiz-a4", QUESTIONS);
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 3 (Revisão) — Slots e soquete</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 3 (Revisão) — Slots e soquete</h1>
+          <p>15/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🧩 Aula 3 (Revisão) — Slots e soquete (onde encaixa o quê)</h2>
+<p><strong>Objetivo:</strong> identificar onde encaixam CPU, RAM e placas, evitando confusão entre soquete e slots.</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>Soquete</strong> é o encaixe da <strong>CPU</strong>.</li>
+  <li><strong>Slots de RAM</strong> são encaixes das memórias.</li>
+  <li><strong>Slots de expansão</strong> são encaixes de placas extras.</li>
+  <li><strong>Regra:</strong> cada peça tem seu encaixe correto — forçar pode danificar.</li>
+</ul>
+
+      </div>
+
+      <div class="quiz" id="quiz-a3">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Soquete é para:", "options": ["CPU", "Mouse", "Monitor", "Pendrive", "Impressora"], "correct": 0, "explain": "CPU encaixa no soquete."}, {"stem": "RAM encaixa em:", "options": ["Portas USB", "Soquete", "Slots de RAM", "Cabo HDMI", "Fonte"], "correct": 2, "explain": "RAM vai nos slots de RAM."}, {"stem": "Placa de vídeo (quando existe) encaixa em:", "options": ["Slots de RAM", "Slots de expansão", "Soquete/CPU", "Porta de energia", "Entrada de fone"], "correct": 1, "explain": "Placa extra vai em expansão."}, {"stem": "Forçar uma peça no encaixe errado pode:", "options": ["Aumentar desempenho", "Criar mais portas", "Melhorar internet", "Aumentar brilho", "Danificar a peça/placa"], "correct": 4, "explain": "Forçar danifica."}, {"stem": "Slots normalmente são:", "options": ["Encaixes longos na placa", "Botões do gabinete", "Cabos da fonte", "Ícones do Windows", "Aplicativos"], "correct": 0, "explain": "Slots são encaixes."}, {"stem": "Soquete costuma ficar:", "options": ["No meio do teclado", "Na placa-mãe, perto do cooler", "Dentro do monitor", "No cabo USB", "Na impressora"], "correct": 1, "explain": "CPU/cooler próximos."}, {"stem": "Qual item NÃO encaixa direto na placa-mãe?", "options": ["CPU", "RAM", "Placa (expansão)", "Mouse", "Conector de energia"], "correct": 3, "explain": "Mouse conecta em porta USB."}, {"stem": "Slots de RAM ficam geralmente:", "options": ["Ao lado das portas traseiras", "No gabinete", "Próximos ao soquete da CPU", "Dentro do monitor", "No mousepad"], "correct": 2, "explain": "RAM costuma ficar perto da CPU."}, {"stem": "O que ajuda a identificar slots de RAM em uma imagem?", "options": ["São trilhos longos e próximos da CPU", "São bolinhas pequenas", "São telas", "São ventoinhas", "São cabos grossos"], "correct": 0, "explain": "Formato típico."}, {"stem": "A melhor prática ao montar é:", "options": ["Empurrar forte", "Usar metal para ajustar", "Molhar a mão", "Desligar o disjuntor", "Conferir o encaixe correto e alinhar antes de pressionar"], "correct": 4, "explain": "Alinhar e encaixar certo."}];
+    initQuiz("quiz-a3", QUESTIONS);
+  </script>
+</body>
+</html>

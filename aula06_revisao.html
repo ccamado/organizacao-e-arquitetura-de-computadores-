@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 6 (Revisão) — Memória cache</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 6 (Revisão) — Memória cache</h1>
+          <p>22/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🚀 Aula 6 (Revisão) — Memória cache: por que acelera</h2>
+<p><strong>Objetivo:</strong> entender cache como memória rápida da CPU e como isso melhora o desempenho.</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>Cache</strong> é uma memória muito rápida usada pela CPU.</li>
+  <li>Guarda informações/instruções que a CPU usa com frequência.</li>
+  <li>Ajuda a CPU a gastar menos tempo “buscando” dados longe.</li>
+  <li>Cache não substitui RAM e não guarda arquivos como disco.</li>
+</ul>
+<div class="note"><strong>Analogia:</strong> cache = “coisas na mesa”; RAM = “coisas na gaveta”; disco = “coisas no armário”.</div>
+
+      </div>
+
+      <div class="quiz" id="quiz-a6">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Cache é:", "options": ["Um tipo de cabo", "Uma memória rápida usada pela CPU", "Um aplicativo", "Um monitor", "Um periférico"], "correct": 1, "explain": "Cache é memória rápida."}, {"stem": "Cache serve para:", "options": ["Acelerar acessos a dados frequentes", "Guardar fotos para sempre", "Substituir teclado", "Aumentar internet", "Diminuir a tela"], "correct": 0, "explain": "Cache acelera."}, {"stem": "Qual ordem faz mais sentido (mais rápido → mais lento)?", "options": ["Disco → RAM → Cache", "RAM → Disco → Cache", "Cache → RAM → Disco", "Cache → Disco → RAM", "Monitor → teclado → mouse"], "correct": 2, "explain": "Cache é mais rápido."}, {"stem": "Cache fica mais perto de:", "options": ["Impressora", "Mouse", "Monitor", "Fonte", "CPU"], "correct": 4, "explain": "Cache é da CPU."}, {"stem": "Cache NÃO é:", "options": ["Memória rápida", "Armazenamento permanente de arquivos", "Usada pela CPU", "Voltada a dados frequentes", "Parte do desempenho"], "correct": 1, "explain": "Cache não é disco."}, {"stem": "Se uma CPU usa muito cache, isso ajuda quando:", "options": ["Ela repete tarefas/dados frequentemente", "O monitor é maior", "O mouse é novo", "O teclado tem LED", "A internet é lenta"], "correct": 0, "explain": "Repetição favorece cache."}, {"stem": "Cache e RAM são iguais?", "options": ["Sim, sempre", "Sim, apenas muda o nome", "Sim, ambas guardam arquivos para sempre", "Não, cache é menor e mais rápida; RAM é maior e mais geral", "Não, RAM fica no monitor"], "correct": 3, "explain": "Cache≠RAM."}, {"stem": "Um exemplo de ‘dados frequentes’ é:", "options": ["Papel da impressora", "Um cabo HDMI", "Instruções que o programa usa repetidamente", "A cor do gabinete", "O volume do som"], "correct": 2, "explain": "Dados/instruções repetidas."}, {"stem": "Se o PC demora muito para abrir arquivos, pode ter relação com:", "options": ["Cache do mouse", "Cache do monitor", "Cache do teclado", "Cache da impressora", "Disco/SSD (armazenamento)"], "correct": 4, "explain": "Abrir arquivos liga ao disco."}, {"stem": "A melhor analogia para cache na aula foi:", "options": ["Mesa (cache) vs gaveta (RAM) vs armário (disco)", "Carro vs bicicleta", "Árvore vs flor", "Copo vs prato", "Telefone vs rádio"], "correct": 0, "explain": "Analogia mesa/gaveta/armário."}];
+    initQuiz("quiz-a6", QUESTIONS);
+  </script>
+</body>
+</html>

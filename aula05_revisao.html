@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 5 (Revisão) — Processadores (conceitos)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 5 (Revisão) — Processadores (conceitos)</h1>
+          <p>22/05 • 1ºA • Revisão</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>⏱️ Aula 5 (Revisão) — Processadores (conceitos): clock, barramento, “tensão” como ideia</h2>
+<p><strong>Objetivo:</strong> entender o básico do processador e termos comuns sem fazer contas.</p>
+<div class="hr"></div>
+<h2>✅ Resumo para o caderno</h2>
+<ul class="list">
+  <li><strong>CPU</strong> executa instruções do sistema e dos programas.</li>
+  <li><strong>Clock</strong> (frequência) é uma ideia de ritmo/velocidade de trabalho (conceito).</li>
+  <li><strong>Barramento</strong> é caminho de dados entre CPU e outras peças.</li>
+  <li><strong>Energia/calor</strong>: CPU precisa de energia e gera calor, por isso existe refrigeração.</li>
+</ul>
+
+      </div>
+
+      <div class="quiz" id="quiz-a5">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Vale 1 ponto por questão.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • Aulas com revisão
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Clock é uma ideia de:", "options": ["Tamanho do gabinete", "Velocidade da internet", "Ritmo de trabalho da CPU", "Quantidade de USB", "Tipo de mouse"], "correct": 2, "explain": "Clock = ritmo (conceito)."}, {"stem": "Barramento serve para:", "options": ["Trocar dados entre componentes", "Aumentar o volume", "Criar arquivos", "Imprimir", "Conectar à tomada"], "correct": 0, "explain": "Barramento = dados."}, {"stem": "CPU faz principalmente:", "options": ["Guardar arquivos", "Executar instruções e cálculos", "Ser a tela", "Ser o teclado", "Ser o cabo de rede"], "correct": 1, "explain": "CPU processa."}, {"stem": "Mais energia/calor na CPU exige:", "options": ["Mais papel", "Mais tinta", "Mais cabo HDMI", "Mais mouse", "Refrigeração adequada"], "correct": 4, "explain": "Refrigeração é necessária."}, {"stem": "Qual item NÃO é uma função da CPU?", "options": ["Processar", "Executar instruções", "Ajudar na multitarefa", "Servir como disco rígido", "Trabalhar com dados"], "correct": 3, "explain": "Disco ≠ CPU."}, {"stem": "Quando o PC está lento abrindo programas, pode estar ligado a:", "options": ["Teclado", "Monitor", "CPU/RAM/Disco (conjunto)", "Mouse", "Cabo P2"], "correct": 2, "explain": "Lentidão é multifator."}, {"stem": "O barramento liga CPU a:", "options": ["RAM/disco/USB/rede (caminhos de comunicação)", "Som do fone", "Papel da impressora", "Cor do wallpaper", "Brilho do monitor"], "correct": 0, "explain": "Caminhos internos."}, {"stem": "CPU de notebook e de servidor podem ter objetivos diferentes, mas ambos precisam:", "options": ["Muitos adesivos", "Estabilidade e refrigeração", "Som alto", "Tela grande", "Mouse gamer"], "correct": 1, "explain": "Ambos precisam estabilidade."}, {"stem": "Qual termo se relaciona com ‘várias tarefas ao mesmo tempo’?", "options": ["VGA", "HDMI", "P2", "RJ‑45", "Núcleos/threads (ideia)"], "correct": 4, "explain": "Multitarefa."}, {"stem": "CPU esquenta porque:", "options": ["Trabalhar consome energia e gera calor", "O mouse é pesado", "O monitor é grande", "A RAM é azul", "O gabinete é preto"], "correct": 0, "explain": "Energia → calor."}];
+    initQuiz("quiz-a5", QUESTIONS);
+  </script>
+</body>
+</html>
