@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 7 — Processadores (categorias do mercado)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 7 — Processadores (categorias do mercado)</h1>
+          <p>Sexta 29/05 • 1ºA • UCII OAC • Sala</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>📌 Aula 7 (SALA) — Processadores: “categorias do mercado” (visão geral)</h2>
+<p><strong>Ideia da aula:</strong> entender o que a CPU faz e como comparar “tipos de processador” por uso (entrada, intermediário, alto desempenho), sem marcas e sem complicação.</p>
+
+<div class="kpi">
+  <span class="pill">🧠 <strong>CPU</strong> = executa instruções</span>
+  <span class="pill">⚙️ <strong>Núcleos/threads</strong> = multitarefa (ideia)</span>
+  <span class="pill">🚀 <strong>Cache</strong> = memória rápida da CPU</span>
+  <span class="pill">🔥 <strong>Calor/consumo</strong> = exige refrigeração</span>
+</div>
+
+<div class="hr"></div>
+
+<div class="columns">
+  <div class="card">
+    <h2>✅ Resumo para o caderno</h2>
+    <ul class="list">
+      <li><strong>CPU (processador)</strong> é o “cérebro” do computador: faz cálculos e decide as ações.</li>
+      <li>Processadores podem ser agrupados por <strong>categoria de uso</strong>: <strong>entrada</strong> (tarefas básicas), <strong>intermediário</strong> (uso geral + folga), <strong>alto desempenho</strong> (tarefas pesadas).</li>
+      <li><strong>Núcleos/threads</strong> ajudam na multitarefa (várias coisas ao mesmo tempo).</li>
+      <li><strong>Cache</strong> é uma memória muito rápida usada pela CPU para acelerar o que ela usa com frequência.</li>
+      <li>Mais desempenho costuma significar mais <strong>calor</strong> → precisa de <strong>cooler/dissipador</strong> adequado.</li>
+      <li><strong>Servidor</strong> prioriza <strong>estabilidade</strong> e ficar ligado por muito tempo (<strong>uptime</strong>).</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>🧪 Mini prática (rápida)</h2>
+    <div class="note">
+      No laboratório (Windows), você consegue ver a CPU e RAM do PC:
+      <br/><strong>Win + R</strong> → digite <strong>msinfo32</strong> → Enter.
+      <br/>Anote no caderno: <em>Processador</em> e <em>Memória física instalada (RAM)</em>.
+    </div>
+    <div class="hr"></div>
+    <h2>🌐 Conexão com tecnologia</h2>
+    <ul class="list">
+      <li>Site no ar = servidor trabalhando sem parar.</li>
+      <li>CPU + rede + disco + refrigeração mantêm o serviço estável.</li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+      <div class="quiz" id="quiz-a7">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Dica: cada questão vale 1 ponto. Clique em uma alternativa para ver o feedback na hora.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • 29/05 (Aulas 7 e 8)
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Qual frase melhor descreve um processador (CPU)?", "options": ["É a peça que armazena arquivos permanentemente.", "É o componente que faz os cálculos e decide o que o computador faz.", "É o cabo que conecta o computador à internet.", "É a placa que mostra imagem no monitor.", "É a fonte que transforma energia da tomada."], "correct": 1, "explain": "CPU = ‘cérebro’ que executa instruções (processa)."}, {"stem": "Um PC para estudos e navegação costuma precisar de:", "options": ["Uma CPU ‘básica’ já dá conta.", "Sempre a CPU mais cara do mercado.", "Nenhuma CPU (não é necessária).", "Uma placa-mãe sem RAM.", "Somente uma placa de vídeo, sem CPU."], "correct": 0, "explain": "Uso leve geralmente não exige topo de linha."}, {"stem": "Qual característica está mais ligada a fazer várias tarefas ao mesmo tempo?", "options": ["Quantidade de núcleos/threads (ideia de paralelismo).", "Cor do gabinete.", "Tipo de mouse.", "Formato do monitor.", "Altura do teclado."], "correct": 0, "explain": "Mais núcleos/threads ajudam na multitarefa (conceito)."}, {"stem": "Em ‘categorias do mercado’, um PC ‘de entrada’ é aquele que:", "options": ["É feito para tarefas básicas e tem custo menor.", "Serve apenas para jogos competitivos.", "É igual a servidor de datacenter.", "Não consegue ligar o Windows.", "Só funciona sem internet."], "correct": 0, "explain": "Entrada = básico, menor custo."}, {"stem": "Qual frase faz sentido quando falamos de servidor (site no ar)?", "options": ["Servidor pode desligar várias vezes ao dia sem problema.", "Servidor precisa ser estável e ficar ligado por muito tempo (uptime).", "Servidor não usa rede.", "Servidor não usa disco.", "Servidor não precisa de energia."], "correct": 1, "explain": "Servidor busca estabilidade e disponibilidade."}, {"stem": "O que é memória cache (ideia geral)?", "options": ["Uma memória muito rápida usada pela CPU para guardar coisas que ela usa toda hora.", "Uma pasta de arquivos do Windows.", "Um tipo de cabo de rede.", "Um aplicativo para limpar o PC.", "Um tipo de teclado."], "correct": 0, "explain": "Cache acelera acesso a dados/instruções frequentes."}, {"stem": "Qual escolha é mais coerente para ‘PC gamer’ (sem entrar em marcas)?", "options": ["CPU e placa de vídeo mais fortes, e boa refrigeração.", "Apenas um mouse diferente.", "Somente trocar o monitor.", "Remover o cooler da CPU para economizar.", "Diminuir a RAM para aumentar desempenho."], "correct": 0, "explain": "Jogos exigem CPU/GPU e bom resfriamento."}, {"stem": "Qual informação você consegue ver no Windows sobre a CPU e RAM pelo msinfo32?", "options": ["Somente a cor do gabinete.", "Processador e memória instalada (RAM).", "A senha do Wi‑Fi.", "O número do seu celular.", "O nome do professor."], "correct": 1, "explain": "msinfo32 mostra dados do sistema, incluindo CPU e RAM."}, {"stem": "O que é TDP (ideia simples) quando aparece em discussões de CPU?", "options": ["Uma noção de quanto calor/energia o processador pode gerar e exigir de refrigeração.", "O tamanho do monitor.", "A velocidade do Wi‑Fi.", "O tipo de fonte musical do PC.", "O formato do conector USB."], "correct": 0, "explain": "TDP se relaciona a energia/calor e resfriamento (conceito)."}, {"stem": "Qual item NÃO é um critério técnico comum para comparar CPUs?", "options": ["Núcleos/threads.", "Clock (frequência).", "Cache.", "Consumo/energia (noção).", "Cor da área de trabalho (wallpaper)."], "correct": 4, "explain": "Wallpaper não é critério de CPU."}];
+    initQuiz("quiz-a7", QUESTIONS);
+  </script>
+</body>
+</html>

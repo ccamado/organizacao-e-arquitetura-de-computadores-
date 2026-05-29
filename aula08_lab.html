@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 8 — Dissipadores e coolers (temperatura e estabilidade)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 8 — Dissipadores e coolers (temperatura e estabilidade)</h1>
+          <p>Sexta 29/05 • 1ºA • UCII OAC • Laboratório (Windows)</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        
+<h2>🧊 Aula 8 (LAB) — Dissipadores e coolers: temperatura e estabilidade</h2>
+<p><strong>Ideia da aula:</strong> entender por que a CPU esquenta e como dissipador/cooler ajudam a manter o computador estável (sem travar/desligar).</p>
+
+<div class="kpi">
+  <span class="pill">🧊 <strong>Dissipador</strong> = espalha o calor</span>
+  <span class="pill">🌀 <strong>Cooler</strong> = ventoinha que remove calor</span>
+  <span class="pill">🧯 <strong>Superaquecimento</strong> = risco de travar/desligar</span>
+  <span class="pill">🌬️ <strong>Fluxo de ar</strong> = entradas e saídas livres</span>
+</div>
+
+<div class="hr"></div>
+
+<div class="columns">
+  <div class="card">
+    <h2>✅ Resumo para o caderno</h2>
+    <ul class="list">
+      <li><strong>Dissipador</strong> ajuda a tirar o calor da CPU (espalha o calor).</li>
+      <li><strong>Cooler</strong> (ventoinha) empurra o ar e ajuda a remover esse calor.</li>
+      <li>Se o PC superaquece, pode <strong>ficar lento</strong>, <strong>travar</strong> ou <strong>desligar</strong> para se proteger.</li>
+      <li><strong>Poeira</strong> e <strong>saídas de ar bloqueadas</strong> pioram a refrigeração.</li>
+      <li><strong>Servidor</strong> precisa de refrigeração boa porque trabalha por muito tempo (uptime).</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>🧪 Prática no Windows (segura)</h2>
+    <ol class="list">
+      <li>Abra o <strong>Gerenciador de Tarefas</strong>: <strong>Ctrl + Shift + Esc</strong>.</li>
+      <li>Clique em <strong>Desempenho</strong> e observe o uso de <strong>CPU</strong>.</li>
+      <li>Abra e feche um programa leve (ex.: Calculadora) e veja se o uso muda.</li>
+      <li>Registre no caderno: “Antes / Depois” (em 2 linhas).</li>
+    </ol>
+    <div class="note"><strong>Segurança:</strong> hoje é só observar e registrar. Não abrir fonte e não desmontar peças.</div>
+  </div>
+</div>
+
+<div class="hr"></div>
+
+<h2>🧠 Fechamento (1 frase)</h2>
+<p>Refrigeração boa = computador mais estável (menos travas) e mais confiável para tarefas e serviços.</p>
+
+      </div>
+
+      <div class="quiz" id="quiz-a8">
+        <h3>🎮 Quiz (10 questões) — pratique e veja seu placar!</h3>
+        <div class="note">Dica: cada questão vale 1 ponto. Clique em uma alternativa para ver o feedback na hora.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress" aria-label="Progresso do quiz"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        UCII — Organização e Arquitetura de Computadores (1ºA) • 2º bimestre • 29/05 (Aulas 7 e 8)
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [{"stem": "Qual é a função principal do dissipador e do cooler?", "options": ["Aumentar o volume do som.", "Diminuir a temperatura do processador e manter o PC estável.", "Guardar arquivos.", "Substituir a RAM.", "Conectar à internet."], "correct": 1, "explain": "Eles removem calor para evitar superaquecimento."}, {"stem": "Quando o computador superaquece, o que pode acontecer?", "options": ["Ele fica mais rápido automaticamente.", "Pode travar, desligar ou reduzir desempenho para se proteger.", "Aumenta a velocidade do Wi‑Fi.", "Cria mais memória RAM.", "Ganha mais portas USB."], "correct": 1, "explain": "Superaquecimento causa instabilidade e queda de desempenho."}, {"stem": "No laboratório, qual atitude é segura e adequada?", "options": ["Abrir a fonte de alimentação.", "Mexer em fios desencapados.", "Apenas observar e registrar sem desmontar.", "Desligar o disjuntor da escola.", "Retirar o cooler do processador."], "correct": 2, "explain": "Segurança: observar e registrar; não desmontar peças perigosas."}, {"stem": "Qual é um sinal comum de problema de refrigeração?", "options": ["O mouse fica azul.", "Ventoinha fazendo muito barulho ou PC aquecendo demais.", "A tela muda para 4K.", "O teclado ganha teclas novas.", "O Windows muda de idioma sozinho."], "correct": 1, "explain": "Ruído alto/aquecimento são sinais típicos."}, {"stem": "O que pode ajudar a refrigeração além do cooler?", "options": ["Acumular poeira dentro do gabinete.", "Organizar cabos e manter entradas de ar livres.", "Fechar todas as saídas de ar.", "Cobrir o gabinete com tecido.", "Desligar a ventoinha."], "correct": 1, "explain": "Fluxo de ar precisa estar livre; poeira atrapalha."}, {"stem": "Por que servidores precisam de refrigeração ainda mais cuidadosa?", "options": ["Porque ficam ligados por pouco tempo.", "Porque trabalham 24/7 e precisam de estabilidade (uptime).", "Porque não usam processador.", "Porque não usam energia.", "Porque só exibem imagens."], "correct": 1, "explain": "Servidor opera continuamente; calor é risco."}, {"stem": "No Windows, onde ver uma noção de uso de CPU durante a atividade?", "options": ["Bloco de Notas.", "Paint.", "Gerenciador de Tarefas (aba Desempenho).", "Lixeira.", "Calculadora."], "correct": 2, "explain": "Gerenciador de Tarefas mostra uso de CPU."}, {"stem": "Qual prática ajuda a evitar superaquecimento em longo prazo?", "options": ["Nunca limpar poeira.", "Manter entradas/saídas de ar limpas e sem bloqueio.", "Colocar o gabinete em armário fechado.", "Usar o PC em cima de cobertor.", "Desligar o cooler quando estiver quente."], "correct": 1, "explain": "Poeira/bloqueio de ar pioram temperatura."}, {"stem": "Se o cooler parar, qual componente aquece mais rápido?", "options": ["CPU (processador).", "Mouse.", "Cabo HDMI.", "Pendrive.", "Monitor."], "correct": 0, "explain": "CPU gera bastante calor e depende de refrigeração."}, {"stem": "Qual frase liga refrigeração a desempenho (bem simples)?", "options": ["Quanto mais quente, melhor sempre.", "Refrigeração mantém temperatura segura e evita travamentos/queda de desempenho.", "Refrigeração serve só para deixar bonito.", "Refrigeração substitui o sistema operacional.", "Refrigeração aumenta a internet."], "correct": 1, "explain": "Temperatura controlada = estabilidade."}];
+    initQuiz("quiz-a8", QUESTIONS);
+  </script>
+</body>
+</html>
