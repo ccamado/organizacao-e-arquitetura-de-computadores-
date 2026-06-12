@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 9 — Memória RAM</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 9 — Memória RAM</h1>
+          <p>Sexta 12/06 • 1ºA • UCII OAC • Sala/Laboratório</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+        <a class="btn primary" href="aula10_bancos_ram.html">➡️ Aula 10</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>📌 Aula 9 — Memória RAM: função e por que existe</h2>
+        <p><strong>Ideia da aula:</strong> entender a RAM como memória de trabalho temporária do computador. Ela ajuda o processador a trabalhar com programas e dados que estão em uso agora.</p>
+
+        <div class="kpi">
+          <span class="pill">⚡ <strong>RAM</strong> = memória rápida e temporária</span>
+          <span class="pill">🧠 <strong>CPU</strong> usa a RAM durante o trabalho</span>
+          <span class="pill">💾 <strong>Disco/SSD</strong> guarda arquivos por mais tempo</span>
+          <span class="pill">🔄 <strong>Desligou?</strong> RAM perde o conteúdo</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="columns">
+          <div class="card">
+            <h2>✅ Resumo para o caderno</h2>
+            <ul class="list">
+              <li><strong>Memória RAM</strong> é uma memória rápida usada enquanto o computador está ligado.</li>
+              <li>Ela guarda temporariamente programas e dados que estão sendo usados naquele momento.</li>
+              <li>A <strong>CPU</strong> acessa a RAM para trabalhar com mais rapidez.</li>
+              <li>A RAM é diferente do <strong>disco/SSD</strong>: o disco guarda arquivos por mais tempo; a RAM guarda dados temporários.</li>
+              <li>Quando o computador é desligado, os dados que estavam apenas na RAM são perdidos.</li>
+              <li>Quando há pouca RAM, o computador pode ficar lento ao abrir vários programas ao mesmo tempo.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>🧪 Atividade prática guiada</h2>
+            <ol class="list">
+              <li>Abra o <strong>Gerenciador de Tarefas</strong>: Ctrl + Shift + Esc.</li>
+              <li>Clique em <strong>Desempenho</strong> e depois em <strong>Memória</strong>.</li>
+              <li>Anote no caderno a quantidade de RAM instalada.</li>
+              <li>Observe o uso da memória antes e depois de abrir um programa leve.</li>
+              <li>Registre: “RAM instalada”, “uso antes” e “uso depois”.</li>
+            </ol>
+            <div class="note"><strong>Plano B offline:</strong> se o laboratório não estiver disponível, desenhe CPU, RAM e Disco como uma mesa de trabalho: CPU = pessoa trabalhando; RAM = mesa; Disco/SSD = armário.</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        <h2>🌐 Conexão com servidores e Web</h2>
+        <p>Um servidor que hospeda sites precisa de RAM para manter serviços, páginas, banco de dados e processos em execução. Pouca RAM pode deixar o serviço lento.</p>
+      </div>
+
+      <div class="quiz" id="quiz-a9">
+        <h3>🎮 Quiz (10 questões) — Memória RAM</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Cada questão vale 1 ponto.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">UCII — Organização e Arquitetura de Computadores • 2º bimestre • Aula 9</div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [
+      {stem:"Qual é a função principal da memória RAM?", options:["Guardar arquivos para sempre","Ajudar o computador a trabalhar com dados e programas em uso","Ligar o monitor","Substituir o processador","Conectar a internet"], correct:1, explain:"RAM guarda temporariamente o que está em uso."},
+      {stem:"A RAM é considerada uma memória:", options:["Temporária e rápida","Permanente e lenta","Igual ao HD","Usada apenas pelo teclado","Usada só para internet"], correct:0, explain:"Ela é rápida, mas perde os dados ao desligar."},
+      {stem:"Quando o computador é desligado, o que acontece com os dados que estavam apenas na RAM?", options:["Ficam guardados para sempre","Vão para o monitor","São perdidos","Viraram arquivos automaticamente","São enviados para a impressora"], correct:2, explain:"RAM é volátil/temporária."},
+      {stem:"Qual componente guarda arquivos por mais tempo?", options:["RAM","Disco/SSD","Cooler","Mouse","Slot de expansão"], correct:1, explain:"Disco/SSD é armazenamento permanente."},
+      {stem:"CPU e RAM se relacionam porque:", options:["A CPU usa a RAM para acessar dados em uso","A RAM substitui a CPU","A CPU é uma porta USB","A RAM é o monitor","A CPU só funciona sem RAM"], correct:0, explain:"A CPU trabalha com dados disponíveis na RAM."},
+      {stem:"Se há pouca RAM e muitos programas abertos, o PC pode:", options:["Ficar mais rápido","Ficar lento","Ganhar mais memória sozinho","Aumentar o tamanho da tela","Virar servidor automaticamente"], correct:1, explain:"Pouca RAM pode causar lentidão."},
+      {stem:"No Windows, uma forma simples de observar a RAM é usar:", options:["Calculadora","Bloco de Notas","Gerenciador de Tarefas > Desempenho > Memória","Paint","Lixeira"], correct:2, explain:"O Gerenciador de Tarefas mostra uso de memória."},
+      {stem:"Na analogia da aula, RAM pode ser comparada a:", options:["Mesa de trabalho","Armário de arquivos permanentes","Tomada da parede","Tela do monitor","Cabo de rede"], correct:0, explain:"Mesa = espaço temporário para trabalhar."},
+      {stem:"Qual frase está correta?", options:["RAM e SSD são a mesma coisa","RAM guarda dados temporários; SSD guarda arquivos por mais tempo","RAM é uma impressora","SSD perde tudo ao desligar como a RAM","RAM serve apenas para jogos"], correct:1, explain:"Essa é a diferença básica."},
+      {stem:"Em servidores, a RAM é importante porque:", options:["Ajuda serviços e aplicações a ficarem em execução","Aumenta o volume do som","Troca a cor do gabinete","Substitui a rede","Apaga os sites"], correct:0, explain:"Serviços em execução usam memória."}
+    ];
+    initQuiz("quiz-a9", QUESTIONS);
+  </script>
+</body>
+</html>
