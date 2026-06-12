@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aula 10 — Bancos de Memória RAM</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="badge">UCII</div>
+        <div class="hgroup">
+          <h1>Aula 10 — Bancos de Memória RAM</h1>
+          <p>Sexta 12/06 • 1ºA • UCII OAC • Laboratório</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="index.html">🏠 Menu</a>
+        <a class="btn" href="revisao.html">🧠 Revisão</a>
+        <a class="btn primary" href="aula09_memoria_ram.html">⬅️ Aula 9</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>📌 Aula 10 — Bancos de memória RAM: encaixe, arranjo e impacto prático</h2>
+        <p><strong>Ideia da aula:</strong> entender que a RAM fica em módulos encaixados em slots e que a organização desses módulos interfere na capacidade e na estabilidade do computador.</p>
+
+        <div class="kpi">
+          <span class="pill">🧩 <strong>Módulo</strong> = pente de RAM</span>
+          <span class="pill">📍 <strong>Slot</strong> = encaixe da RAM</span>
+          <span class="pill">➕ <strong>Capacidade</strong> = soma dos módulos</span>
+          <span class="pill">🛡️ <strong>Compatibilidade</strong> = encaixe certo e padrão correto</span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="columns">
+          <div class="card">
+            <h2>✅ Resumo para o caderno</h2>
+            <ul class="list">
+              <li><strong>Módulo de RAM</strong> é o “pente” de memória instalado na placa-mãe.</li>
+              <li><strong>Slot de RAM</strong> é o encaixe onde o módulo é colocado.</li>
+              <li><strong>Banco de memória</strong> é a organização/arranjo dos módulos de RAM nos slots.</li>
+              <li>A capacidade total pode ser formada pela soma dos módulos. Exemplo: 4 GB + 4 GB = 8 GB.</li>
+              <li>Nem toda RAM serve em toda placa-mãe: é preciso respeitar o tipo/padrão compatível.</li>
+              <li>Instalar memória de forma incorreta pode impedir o computador de ligar ou gerar instabilidade.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>🧪 Atividade prática guiada</h2>
+            <ol class="list">
+              <li>Observe uma imagem de placa-mãe ou computador do laboratório.</li>
+              <li>Localize visualmente os <strong>slots de RAM</strong>.</li>
+              <li>Desenhe no caderno uma placa simples com 2 ou 4 slots.</li>
+              <li>Crie 3 combinações possíveis: 4 GB, 8 GB e 16 GB.</li>
+              <li>Explique em uma frase por que não se deve forçar o encaixe.</li>
+            </ol>
+            <div class="note"><strong>Segurança:</strong> não desmontar computadores sem autorização. A atividade pode ser feita com imagens, simulação no quadro ou observação externa.</div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        <h2>🌐 Conexão com servidores e Web</h2>
+        <p>Servidores usam bancos de memória bem planejados para suportar muitos acessos, sistemas e serviços ao mesmo tempo. Mais RAM não resolve tudo, mas ajuda quando o problema é falta de memória.</p>
+      </div>
+
+      <div class="quiz" id="quiz-a10">
+        <h3>🎮 Quiz (10 questões) — Bancos de Memória RAM</h3>
+        <div class="note">Clique em uma alternativa para ver o feedback na hora. Cada questão vale 1 ponto.</div>
+        <div class="hr"></div>
+        <div data-questions></div>
+        <div class="scorebar">
+          <div class="pill"><strong>Placar:</strong> <span data-score>0 / 10</span></div>
+          <div class="pill"><strong>Concluídas:</strong> <span data-done>0 de 10</span></div>
+          <div class="progress"><div></div></div>
+          <button class="btn" type="button" data-reset>🔄 Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="footer">UCII — Organização e Arquitetura de Computadores • 2º bimestre • Aula 10</div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    const QUESTIONS = [
+      {stem:"O que é um módulo de memória RAM?", options:["O pente de RAM instalado na placa-mãe","O cabo de internet","O monitor","A fonte de energia","O teclado"], correct:0, explain:"Módulo é o pente de memória."},
+      {stem:"O que é um slot de RAM?", options:["Um arquivo do Windows","O encaixe onde a RAM é instalada","Uma ventoinha","Uma porta HDMI","Um programa"], correct:1, explain:"Slot é o encaixe físico da RAM."},
+      {stem:"Banco de memória, nesta aula, significa:", options:["Banco financeiro","Organização dos módulos de RAM nos slots","Impressora da escola","Sistema de notas","Cabo de vídeo"], correct:1, explain:"Banco de memória é o arranjo/organização dos módulos."},
+      {stem:"Se um computador tem 4 GB + 4 GB de RAM, a capacidade total é:", options:["4 GB","6 GB","8 GB","12 GB","16 GB"], correct:2, explain:"4 + 4 = 8 GB."},
+      {stem:"Por que não devemos forçar o pente de RAM no slot?", options:["Porque pode danificar o módulo ou a placa-mãe","Porque aumenta a internet","Porque muda o idioma do Windows","Porque apaga o monitor","Porque transforma RAM em SSD"], correct:0, explain:"Forçar o encaixe pode quebrar componentes."},
+      {stem:"Toda RAM serve em toda placa-mãe?", options:["Sim, sempre","Não, depende do padrão e compatibilidade","Sim, se for bonita","Sim, se tiver etiqueta","Sim, se for de qualquer tamanho"], correct:1, explain:"É preciso compatibilidade."},
+      {stem:"Se a RAM estiver mal encaixada, o computador pode:", options:["Não ligar ou apresentar instabilidade","Ficar com mais som","Ganhar mais portas USB","Imprimir sozinho","Virar celular"], correct:0, explain:"Má instalação pode impedir funcionamento."},
+      {stem:"Qual alternativa mostra uma combinação possível de módulos?", options:["Mouse + teclado = RAM","4 GB + 8 GB = 12 GB de capacidade total","HDMI + VGA = memória","Cooler + CPU = 20 GB","Monitor + cabo = 8 GB"], correct:1, explain:"A soma dos módulos forma a capacidade total."},
+      {stem:"Em servidores, bancos de memória bem planejados ajudam porque:", options:["Apoiam muitos serviços e acessos ao mesmo tempo","Mudam a cor do gabinete","Aumentam o volume do áudio","Substituem todos os discos","Apagam a rede"], correct:0, explain:"Servidores precisam de memória para processos e serviços."},
+      {stem:"Qual cuidado é correto no laboratório?", options:["Desmontar sem autorização","Forçar encaixes","Observar, registrar e seguir orientação do professor","Abrir fonte de alimentação","Mexer em fios sem supervisão"], correct:2, explain:"Segurança e orientação vêm primeiro."}
+    ];
+    initQuiz("quiz-a10", QUESTIONS);
+  </script>
+</body>
+</html>
