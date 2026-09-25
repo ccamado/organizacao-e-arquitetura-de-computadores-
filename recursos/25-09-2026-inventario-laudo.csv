@@ -1,0 +1,15 @@
+Item,Informacao encontrada,Fonte usada,Classificacao (CONFIRMADO/PROVAVEL/NAO VERIFICAVEL),Observacao
+Processador,,,,
+RAM,,,,
+Disco,,,,
+Video,,,,
+Placa-mae,,,,
+Rede,,,,
+Alertas de driver,,,,
+Potencia da fonte,,,,
+Tipo de slot fisico,,,,
+
+CHAMADO,DECISAO (APROVADO/NAO APROVADO/INFORMACAO INSUFICIENTE),Evidencia 1,Evidencia 2,O que ainda falta verificar
+Armazenamento,,,,
+Placa de expansao,,,,
+Upgrade de video,,,,
