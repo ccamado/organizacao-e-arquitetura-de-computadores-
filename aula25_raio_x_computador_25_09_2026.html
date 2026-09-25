@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>25/09/2026 — Raio-X do Computador — OAC II</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .hero-pratica{border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px;margin:16px 0;background:rgba(0,0,0,.16)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .tag{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.16);font-size:12px;font-weight:700}
+    .grid2{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:850px){.grid2{grid-template-columns:1fr 1fr}}
+    .resource-links a{display:block;margin:8px 0}
+    .cmd{font-family:Consolas,monospace;background:rgba(0,0,0,.25);padding:10px;border-radius:10px;margin:8px 0;word-break:break-word}
+    .callout{border-left:4px solid #7c3aed;padding:10px 12px;border-radius:10px;background:rgba(124,58,237,.10)}
+    .safe{border-left:4px solid #16a34a;padding:10px 12px;border-radius:10px;background:rgba(22,163,74,.10)}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid rgba(255,255,255,.18);padding:8px;text-align:left;vertical-align:top}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="badge">UCII</div>
+      <div class="hgroup">
+        <h1>Organização e Arquitetura de Computadores II</h1>
+        <p>1º A · CEPEF · Prof. Claudio Amado · 25/09/2026</p>
+      </div>
+    </div>
+    <div class="nav">
+      <a class="btn" href="index.html">← Índice</a>
+    </div>
+  </div>
+
+  <div class="hero-pratica">
+    <h2>Raio-X do Computador — Missão Oficina de TI</h2>
+    <p>Prática de laboratório para investigar uma máquina real, cruzar fontes e produzir decisões técnicas sustentadas por evidências.</p>
+    <div class="tags">
+      <span class="tag">5º e 6º tempos</span>
+      <span class="tag">100 min</span>
+      <span class="tag">Windows 7</span>
+      <span class="tag">Pré-Conselho/APC</span>
+      <span class="tag">Sem conteúdo novo</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Ferramenta da prática</h2>
+      <p><strong>Ambiente:</strong> Windows 7 + Prompt de Comando + ferramentas nativas.</p>
+      <p><strong>Acesso:</strong> gratuito, sem login e sem instalação adicional.</p>
+      <p><strong>Uso:</strong> coletar evidências sobre hardware, drivers e configuração para produzir inventário e laudo técnico.</p>
+      <div class="resource-links">
+        <a class="btn primary" href="https://support.microsoft.com/windows/open-system-information-10d88d88-0f97-0b8f-0ad2-2f4425a8a29c" target="_blank" rel="noopener">Documentação — Informações do Sistema ↗</a>
+        <a class="btn" href="https://learn.microsoft.com/windows-server/administration/windows-commands/systeminfo" target="_blank" rel="noopener">Documentação — systeminfo ↗</a>
+        <a class="btn" href="https://learn.microsoft.com/windows-server/administration/windows-commands/driverquery" target="_blank" rel="noopener">Documentação — driverquery ↗</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Recursos da prática</h2>
+      <div class="resource-links">
+        <a class="btn primary" href="recursos/25-09-2026-raio-x-comandos.bat" download>⬇ Baixar script de comandos (.bat)</a>
+        <a class="btn primary" href="recursos/25-09-2026-inventario-laudo.csv" download>⬇ Baixar inventário + laudo (.csv)</a>
+        <a class="btn primary" href="recursos/25-09-2026-atividade-raio-x.md" download>⬇ Baixar atividade completa (.md)</a>
+        <a class="btn" href="https://docs.google.com/document/d/10Vgxc9OTTsRs21MC9ZFu07vnrTqXl33M6VMz_c7JEbk/edit" target="_blank" rel="noopener">Abrir atividade no Google Docs ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Segurança</h2>
+    <div class="safe"><strong>Não abrir o gabinete e não desconectar cabos energizados.</strong> Toda investigação desta prática deve ser feita por observação externa, comandos e ferramentas do sistema.</div>
+  </div>
+
+  <div class="card">
+    <h2>5º tempo — Coleta de evidências</h2>
+    <ol class="list">
+      <li><strong>0–5 min:</strong> briefing da missão.</li>
+      <li><strong>5–15 min:</strong> inspeção externa sem abrir o gabinete.</li>
+      <li><strong>15–40 min:</strong> raio-X digital com CMD e ferramentas gráficas.</li>
+      <li><strong>40–50 min:</strong> classificar cada informação como CONFIRMADA, PROVÁVEL ou NÃO VERIFICÁVEL.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Comandos do raio-X</h2>
+    <div class="grid2">
+      <div>
+        <div class="cmd">systeminfo</div>
+        <div class="cmd">wmic cpu get name</div>
+        <div class="cmd">wmic memorychip get capacity,speed</div>
+        <div class="cmd">wmic diskdrive get model,size</div>
+      </div>
+      <div>
+        <div class="cmd">wmic path win32_videocontroller get name</div>
+        <div class="cmd">wmic baseboard get manufacturer,product</div>
+        <div class="cmd">driverquery</div>
+        <div class="cmd">msinfo32 · dxdiag · devmgmt.msc</div>
+      </div>
+    </div>
+    <div class="callout"><strong>Se WMIC não funcionar:</strong> registre a limitação e use msinfo32, dxdiag e Gerenciador de Dispositivos. Falha de ferramenta também é uma evidência sobre o ambiente.</div>
+  </div>
+
+  <div class="card">
+    <h2>Inventário — mapa de confiança</h2>
+    <p>Registre processador, RAM, disco, vídeo, placa-mãe, rede, alertas, potência da fonte e tipo de slot físico.</p>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Item</th><th>Informação</th><th>Fonte</th><th>Classificação</th></tr></thead>
+        <tbody>
+          <tr><td>Processador</td><td></td><td></td><td>CONFIRMADO / PROVÁVEL / NÃO VERIFICÁVEL</td></tr>
+          <tr><td>RAM</td><td></td><td></td><td></td></tr>
+          <tr><td>Disco</td><td></td><td></td><td></td></tr>
+          <tr><td>Vídeo</td><td></td><td></td><td></td></tr>
+          <tr><td>Placa-mãe</td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>6º tempo — Chamados técnicos</h2>
+    <div class="grid2">
+      <div class="box">
+        <h3>Chamado 1 — Armazenamento</h3>
+        <p>Adicionar um disco SATA. O que já pode ser confirmado? O que ainda exige inspeção física?</p>
+      </div>
+      <div class="box">
+        <h3>Chamado 2 — Placa de expansão</h3>
+        <p>Chegou uma placa de rede PCI Express. É possível garantir a instalação só pelos dados do Windows?</p>
+      </div>
+      <div class="box">
+        <h3>Chamado 3 — Upgrade de vídeo</h3>
+        <p>A placa exige fonte de 400 W e ocupa dois slots. Quais evidências precisam ser verificadas?</p>
+      </div>
+      <div class="box">
+        <h3>Informações complementares</h3>
+        <ul class="list">
+          <li>Placa-mãe: PCIe x16 + PCIe x1.</li>
+          <li>Fonte: 250 W.</li>
+          <li>Gabinete: compacto.</li>
+          <li>Placa de vídeo: exige 400 W e ocupa dois slots.</li>
+          <li>Controladora SATA disponível; baia, conector e cabo ainda precisam de verificação física.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Entrega — laudo técnico</h2>
+    <p>Para cada chamado, escolha uma decisão e justifique com evidências:</p>
+    <ul class="list">
+      <li><strong>APROVADO</strong></li>
+      <li><strong>NÃO APROVADO</strong></li>
+      <li><strong>INFORMAÇÃO INSUFICIENTE</strong></li>
+    </ul>
+    <p>O laudo deve conter pelo menos duas evidências e indicar o que ainda precisa ser verificado.</p>
+  </div>
+
+  <div class="card">
+    <h2>Plano B</h2>
+    <p>Se CMD, WMIC ou alguma ferramenta estiver bloqueada, use as demais fontes disponíveis e registre a limitação. Se o laboratório ficar indisponível, o professor pode fornecer capturas/saídas previamente salvas e a turma realiza a classificação das evidências e os chamados técnicos em papel.</p>
+    <p><strong>Princípio da aula:</strong> software não substitui inspeção física; compatibilidade depende também de energia, espaço, conectores, refrigeração e finalidade.</p>
+  </div>
+
+  <div class="footer">UCII · Organização e Arquitetura de Computadores II · 1º A · 25/09/2026</div>
+</div>
+</body>
+</html>
