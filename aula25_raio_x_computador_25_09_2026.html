@@ -86,6 +86,19 @@
   </div>
 
   <div class="card">
+    <h2>Exemplo guiado — CPU</h2>
+    <p><strong>Objetivo:</strong> aprender o ciclo completo antes de começar o inventário.</p>
+    <ol class="list">
+      <li><strong>Execute:</strong> <code>wmic cpu get name</code>.</li>
+      <li><strong>Leia a saída:</strong> identifique o nome/modelo do processador exibido.</li>
+      <li><strong>Registre na planilha:</strong> item = Processador; fonte = WMIC; informação = modelo encontrado.</li>
+      <li><strong>Classifique:</strong> marque <strong>CONFIRMADO</strong>, pois a informação foi obtida diretamente pelo sistema.</li>
+      <li><strong>Conclusão:</strong> o software confirma o modelo detectado, mas não substitui inspeção física para questões como estado do soquete, refrigeração ou possibilidade real de troca.</li>
+    </ol>
+    <div class="callout"><strong>Modelo de registro:</strong> Processador | Intel Core ... | WMIC | CONFIRMADO | Detectado pelo sistema.</div>
+  </div>
+
+  <div class="card">
     <h2>Comandos do raio-X</h2>
     <div class="grid2">
       <div>
@@ -147,6 +160,44 @@
         </ul>
       </div>
     </div>
+  </div>
+
+  <div class="card">
+    <h2>Roteiro guiado dos chamados</h2>
+
+    <h3>Chamado 1 — Armazenamento SATA</h3>
+    <ol class="list">
+      <li>Qual comando ou ferramenta mostrou informação sobre o disco/controladora?</li>
+      <li>Isso confirma que a máquina reconhece armazenamento SATA?</li>
+      <li>Isso confirma que existe <strong>baia física livre</strong>?</li>
+      <li>Isso confirma que existe <strong>conector de energia disponível</strong>?</li>
+      <li>Isso confirma que existe <strong>cabo SATA disponível</strong>?</li>
+      <li>Decisão: APROVADO / NÃO APROVADO / INFORMAÇÃO INSUFICIENTE.</li>
+      <li>Registre duas evidências e diga o que ainda precisa ser verificado.</li>
+    </ol>
+
+    <h3>Chamado 2 — Placa de rede PCI Express</h3>
+    <ol class="list">
+      <li>Qual informação do Windows ajuda a identificar a placa-mãe ou os dispositivos atuais?</li>
+      <li>A ficha complementar informa quais slots existem?</li>
+      <li>Existe evidência de que o slot está <strong>livre e acessível</strong>?</li>
+      <li>O espaço físico do gabinete foi confirmado?</li>
+      <li>Decisão: APROVADO / NÃO APROVADO / INFORMAÇÃO INSUFICIENTE.</li>
+      <li>Justifique usando pelo menos duas evidências.</li>
+    </ol>
+
+    <h3>Chamado 3 — Upgrade de vídeo</h3>
+    <ol class="list">
+      <li>Qual a potência exigida pela nova placa?</li>
+      <li>Qual a potência da fonte informada no cenário?</li>
+      <li>A fonte atende ao requisito mínimo?</li>
+      <li>A placa ocupa quantos slots?</li>
+      <li>O gabinete compacto garante espaço suficiente?</li>
+      <li>Decisão: APROVADO / NÃO APROVADO / INFORMAÇÃO INSUFICIENTE.</li>
+      <li>Registre duas evidências e o risco principal identificado.</li>
+    </ol>
+
+    <div class="safe"><strong>Regra de decisão:</strong> não “chute”. Se os dados não permitirem concluir com segurança, a resposta correta é <strong>INFORMAÇÃO INSUFICIENTE</strong>.</div>
   </div>
 
   <div class="card">
